@@ -15,6 +15,19 @@
 }
 
 
+*{
+   border: 1px solid red;
+}
+
+body{
+    border: 2px dashed green;
+    /* margin: 0px;
+    padding: 0px; */
+    min-height: 100vh;
+    width: 100vw;
+    /* overflow-y: hidden; */
+}
+
 
 /* header styles */
 
@@ -146,10 +159,15 @@ nav li a{
     height: 575px;
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
     align-items: center;
     gap: 50px;
+    /* margin: auto; */
+    margin: 10px 110px 48px 110px;
     padding: 30px 0px;
     
+
+     
     
 }
 
@@ -160,6 +178,8 @@ nav li a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    text-align: left;
+    /* margin: 0px 40px; */
     gap: 20px;
     padding-right: 200px;
     
@@ -168,10 +188,9 @@ nav li a{
 
 
 .empowering-heading{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700px;
-    margin-top: 97px;
-    margin-bottom: 24px;
+    margin: 19px 0px;
 }
 
 .heading-1{
@@ -183,7 +202,7 @@ nav li a{
 }
 
 .empowering-description{
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400px;
     
 }
@@ -196,7 +215,8 @@ nav li a{
 }
 
 .hero-kids{
-max-width: 100%;      
+    max-width: 100%; 
+    /* margin: 0px 40px;      */
 }
 
 
@@ -204,24 +224,40 @@ max-width: 100%;
 
 .curriculum{
     background-image: url(../assets/bg.png);
-    /* max-width: 1440px; */
+    /* margin: 0px auto; */
+    max-width: 1380px;
     /* height: 879px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* padding: 0px 100px; */
+    margin: auto;
+
+
+
 }
 
 .curriculum-box{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
 
     align-items: center;
-    gap: 80;
+    /* gap: 80;
     padding: 60px;
+    padding-left: 100px;
+    padding-right: 10px; */
+
+    
 }
 
 .standard{
     font-size: 2.87rem;
     font-weight: 700px;
-    /* padding: 80px 0px; */
+    padding: 80px 0px;
     /* margin:80px 0px; */
     margin: 0px auto;
 }
@@ -346,7 +382,48 @@ max-width: 100%;
     padding: 17px 22px;
     
 }
-    
+
+/* stories section */
+
+.Stories{
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.image-container{
+    display: flex;
+}
+
+
+
+.date-1{
+    position: relative;
+    width: 140px;
+    height: 37px;
+    top:-40px ;
+    background-color: rgb(60, 216, 232);
+    border-radius: 37px;
+    border: none;
+
+}
+
+
+.activities{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+/* footer section */
+
+.footer{
+    background-color: rgb(1, 172, 253);
+    height: 450px;
+}
 
 
 
@@ -439,17 +516,21 @@ max-width: 100%;
     
     .standard{
         /* width:100%; */
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 500px;
         padding: 150px 0px 0px 0px;
         gap: 20px;
 
     }
 
+    
+
     .card-container{
-        /* width: 100%; */
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        
     }
 
     /* .card-1{
