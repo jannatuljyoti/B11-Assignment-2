@@ -1,8 +1,8 @@
 /* shared styles */
-
-*{
+/* 
+{
     background-image: url(../assets/bg.png);
-}
+} */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
@@ -233,14 +233,20 @@ max-width: 100%;
     .Empowering{
        flex-direction: column;
        
+    }
 
     .empowering-heading{
         font-size: 2rem;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+         margin: 0px auto;
     }
 
     .empowering-description{
         font-size: 0.87rem;
         font-weight: 700px;
+       
     }
 
     .button-text{
@@ -252,17 +258,25 @@ max-width: 100%;
         
         height: 38px;
         
+        
     }
 
     .empowering-box{
-        display: grid;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items:center;
         text-align: center;
          margin: 0px auto;
+         padding: 0px;
        
 
       
+    }
+
+    .Empowering{
+        flex-direction: column-reverse;
     }
 
     
