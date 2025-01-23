@@ -365,14 +365,15 @@ nav li a{
 
 }
 
-.circle1{
+.button1{
     height: 60px;
     width: 60px;
     background-color:Orange ;
     border-radius: 50%;
+    border: none;
 }
 
-.circle{
+.button{
     width: 130px;
     height: 60px;
     margin: 80px 0px;
@@ -382,7 +383,7 @@ nav li a{
 
 
 .icon{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
     font-family: Font Awesome 5 Free;
     color: rgb(255, 255, 255) ;
@@ -390,9 +391,15 @@ nav li a{
     flex-direction: row;
     align-items: center;
     text-align: center;
-    padding: 17px 22px;
+    padding: 17px 15px;
     
 }
+
+.button :hover{
+    background-color: red;
+}
+
+
 
 /* stories section */
 
@@ -690,24 +697,27 @@ nav li a{
 /* responsive section */
 
 @media screen and (max-width:576px) {
-    /* header section */
+    
     
     .menu{
         display: block;
-        
         margin: 30px auto;
     }
 
-    /* .hero-kids{
-        width: 100%;
-    } */
+    .hero-kids{
+        
+    }
 
     .nav-bar{
         margin: 0px auto;
     }
 
     .logo{
-        /* margin: 0px 0px 0px 300px; */
+        
+        margin: 0px auto;
+    }
+
+    .logo-item-bar{
         margin: 0px auto;
     }
 
@@ -727,8 +737,13 @@ nav li a{
         display: none;
     }
 
+    .button{
+        display: none;
+    }
+
     .Empowering{
        flex-direction: column;
+       margin: 0px auto;
        
     }
 
@@ -752,11 +767,10 @@ nav li a{
     }
 
     .enroll{
-        
-        height: 38px;
-        
-        
+            
     }
+
+
 
     .empowering-box{
         max-width: 100%;
@@ -777,11 +791,11 @@ nav li a{
     }
 
 
-    /* standard curriculum */
+    
 
-    /* .curriculum{
+    .curriculum{
         margin: 0px auto;
-    } */
+    }
 
     .circle{
         display: none;
@@ -791,8 +805,6 @@ nav li a{
     .standard{
         font-size: 1rem;
         font-weight: 500px;
-        /* padding: 150px 0px 0px 0px;
-        gap: 20px; */
         margin: 20px 0px 20px 0px;
 
     }
@@ -800,9 +812,7 @@ nav li a{
     
 
     .card-container{
-        /* width: 100%; */
-        /* display: flex;
-        flex-wrap: wrap; */
+        
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 0px auto;
@@ -812,7 +822,6 @@ nav li a{
     .curriculum-image{
         /* max-width: 100%; */
         width: 75px;
-        height: 75;
         margin: 17px 0px;
      
     }
@@ -837,14 +846,13 @@ nav li a{
     .card-1{
        
         width: 200px;
-        height: 256px;
-        
+       
         
     }
 
     .card-2{
         width: 200px;
-        height: 256px;
+        
     }
 
     .card-text2{
@@ -855,7 +863,7 @@ nav li a{
 
     .card-3{
         width: 200px;
-        height: 256px;
+        
     }
 
     .card-text3{
@@ -890,14 +898,14 @@ nav li a{
 
     .story-2{
         max-width: 138px;
-        height: 143px;
+       
 
     }
 
     .date-2{
         
         max-width: 82px;
-        height: 18px;
+        
     }
 
     .date-2-text{
@@ -916,13 +924,13 @@ nav li a{
 
     .date-3{
         width: 82px;
-        height: 17px;
+       
     }
     
 
     .date-5{
         width: 60px;
-        height: 17px;
+        
     }
 
     
